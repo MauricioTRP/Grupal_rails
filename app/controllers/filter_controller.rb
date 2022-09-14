@@ -1,5 +1,9 @@
 class FilterController < ApplicationController
   def index
-    @newspapers = Newspaper.where(params[:category_id])
+    if params[:query]
+      @newspapers = Newspaper.where('body LIKE ?', "%#{params[:query]}%")
+    else
+      @newspapers = Newspaper.where(category_id: params[:category_index])
+    end
   end
 end
