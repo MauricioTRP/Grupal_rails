@@ -3,6 +3,23 @@
     <%= link_to 'Inicio', root_path, class: 'navbar-brand'%>
     <%= link_to 'Noticias', newspapers_path, class: 'navbar-brand'%>
     
+  
+<!--Desplegable-->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul class="dropdown-menu">
+      <%
+=begin%>
+ <li><%= link_to 'Deportes', , class: 'dropdown-item' %></li>
+      <li><%= link_to 'Farándula', , class: 'dropdown-item' %></li>
+      <li><%= link_to 'Nacional', , class: 'dropdown-item' %></li>
+      <li><%= link_to 'Internacional', , class: 'dropdown-item' %></li>
+      <li><%= link_to 'Política', , class: 'dropdown-item' %></li> 
+<%
+=end%>
+    </ul>
+  </li>
+    
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,3 +54,4 @@
     </div>
   </div>
 </nav>
+
