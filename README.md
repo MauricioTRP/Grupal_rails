@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Entrega AwakeLab
 
-Things you may want to cover:
+This app uses rails 7.0.4 and Ruby 3.1.2 versions.
 
-* Ruby version
+you can see a live preview [here](https://awake-grupal.herokuapp.com/).
 
-* System dependencies
+For a further look of the code check the [GitHub repository](https://github.com/MauricioTRP/Grupal_rails)
 
-* Configuration
+in order to run it in your local you have to run:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle install
+```
+```
+rails db:create db:migrate db:seed
+```
